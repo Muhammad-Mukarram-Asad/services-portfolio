@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 28px;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.copyright {
+  letter-spacing: 0.02em;
+}
+
+@media print {
+  .footer {
+    margin-top: 14px;
+  }
+}

@@ -1,0 +1,17 @@
+.section {
+  margin-bottom: 34px;
+}
+
+.copy p {
+  max-width: 68ch;
+}
+
+.copy p + p {
+  margin-top: 14px;
+}
+
+@media print {
+  .section {
+    margin-bottom: 16px;
+  }
+}
