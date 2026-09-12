@@ -1,11 +1,11 @@
 .cta {
-  background: var(--accent);
-  color: var(--white);
+  background: var(--cta-bg);
+  color: var(--cta-text);
   padding: 32px 28px 28px;
 }
 
 .title {
-  color: #c5ddd6;
+  color: var(--cta-title);
 }
 
 .lead {
@@ -13,13 +13,14 @@
   max-width: 42ch;
   margin-bottom: 18px;
   line-height: 1.4;
+  color: var(--cta-text);
 }
 
 .fillIn {
-  border-top: 1px solid rgba(255, 252, 247, 0.22);
+  border-top: 1px solid var(--cta-rule);
   padding-top: 16px;
   font-size: 14.5px;
-  color: #d7e6e1;
+  color: var(--cta-meta);
 }
 
 .row {
@@ -28,9 +29,21 @@
 }
 
 .label {
-  color: #fff;
+  color: var(--cta-label);
   font-style: normal;
   font-weight: 500;
+}
+
+.link {
+  color: var(--cta-link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--cta-label);
 }
 
 @media print {

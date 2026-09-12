@@ -4,7 +4,7 @@
   gap: 0;
   margin: 22px 0 32px;
   border: 1px solid var(--line);
-  background: var(--white);
+  background: var(--surface);
 }
 
 .card {
@@ -41,6 +41,7 @@
   height: 8px;
   border-radius: 50%;
   background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
   animation: livePulse 1.6s ease-in-out infinite;
   flex-shrink: 0;
 }

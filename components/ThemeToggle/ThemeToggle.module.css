@@ -1,0 +1,79 @@
+.toggle {
+  position: relative;
+  width: 58px;
+  height: 32px;
+  border: 1px solid var(--toggle-border);
+  border-radius: 999px;
+  background: var(--toggle-bg);
+  color: var(--toggle-fg);
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.toggle:hover,
+.toggle:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.toggle:focus-visible {
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7px;
+  pointer-events: none;
+}
+
+.sun,
+.moon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.45;
+  transition: opacity 0.25s ease;
+}
+
+.toggle:not(.dark) .sun,
+.dark .moon {
+  opacity: 1;
+}
+
+.knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--toggle-knob);
+  transition: transform 0.28s ease;
+}
+
+.dark .knob {
+  transform: translateX(26px);
+}
+
+@media print {
+  .toggle {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle,
+  .knob,
+  .sun,
+  .moon {
+    transition: none;
+  }
+}

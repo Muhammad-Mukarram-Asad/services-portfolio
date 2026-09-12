@@ -2,12 +2,21 @@
   margin-bottom: 34px;
 }
 
+.copy {
+  color: var(--ink);
+}
+
 .copy p {
   max-width: 68ch;
 }
 
 .copy p + p {
   margin-top: 14px;
+}
+
+.copy b {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 @media print {

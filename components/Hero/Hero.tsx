@@ -1,8 +1,12 @@
+import { ThemeToggle } from "@/components/ThemeToggle";
 import styles from "./Hero.module.css";
 
 export function Hero() {
   return (
     <header>
+      <div className={styles.toolbar}>
+        <ThemeToggle />
+      </div>
       <p className={styles.kicker}>
         <strong className={styles.brand}>React &amp; Next.js</strong>
         <span className={styles.skills}>Pixel-perfect UI · Real-time apps</span>
