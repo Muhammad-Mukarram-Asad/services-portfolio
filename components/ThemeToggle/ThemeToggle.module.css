@@ -40,6 +40,10 @@
   width: 14px;
   height: 14px;
   opacity: 0.45;
+}
+
+.ready .sun,
+.ready .moon {
   transition: opacity 0.25s ease;
 }
 
@@ -56,6 +60,9 @@
   height: 24px;
   border-radius: 50%;
   background: var(--toggle-knob);
+}
+
+.ready .knob {
   transition: transform 0.28s ease;
 }
 
